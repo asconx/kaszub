@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,24 +18,26 @@
     <link rel="stylesheet" href="themekit/css/contact-form.css">
     <link rel="stylesheet" href="skin.css">
     <link rel="icon" href="media/favicon.png">
+
 </head>
+
 <body class="page-main">
     <div id="preloader"></div>
-    <nav class="menu-classic menu-fixed align-right" data-menu-anima="fade-in">
+    <nav class="menu-classic menu-fixed menu-transparent light align-right" data-menu-anima="fade-in">
         <div class="container">
             <div class="menu-brand">
-                <a href="index.html">
-                    <img class="logo-default scroll-hide" src="media/logo-black-blue-solid.svg" alt="logo" />
-                    <img class="logo-retina scroll-hide" src="media/logo-black-blue-solid.svg" alt="logo" />
-                    <img class="logo-default scroll-show" src="media/logo-white-solid.svg" alt="logo" />
-                    <img class="logo-retina scroll-show" src="media/logo-white-solid.svg" alt="logo" />
+                <a href="#">
+                    <img class="logo-default scroll-hide" src="media/logo-white.png" alt="logo" />
+                    <img class="logo-retina scroll-hide" src="media/logo-white.png" alt="logo" />
+                    <img class="logo-default scroll-show" src="media/logo-mobile.png" alt="logo" />
+                    <img class="logo-retina scroll-show" src="media/logo-mobile.png" alt="logo" />
                 </a>
             </div>
             <i class="menu-btn"></i>
             <div class="menu-cnt">
                 <ul id="main-menu">
                     <li class="dropdown">
-                        <a href="#">dom</a>
+                        <a href="#">Główna</a>
                         <ul>
                             <li><a href="index.html">główny</a></li>
                             <li><a href="index-2.html">dom 2</a></li>
@@ -74,7 +77,7 @@
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="treks.html">podróż</a>
+                        <a href="treks.html">rezerwacja</a>
                         <ul>
                             <li><a href="treks.html">podróż</a></li>
                             <li><a href="treks-single.html">pojedyncza podróż</a></li>
@@ -104,60 +107,73 @@
     <main>
         <section class="section-base">
             <div class="container">
-                <div class="google-map" data-marker="media/marker.png" data-coords="46.01049736894874,11.22314543457037"></div>   
-                <hr class="space" />
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div class="title">
-                            <h2>napisz do nas</h2>
-                            <p>kontakt do nas</p>
-                        </div>
-                        <form action="themekit/scripts/contact-form/contact-form.php" class="form-box form-ajax" method="post" data-email="example@domain.com">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <p>imię</p>
-                                    <input id="imię" name="imię" placeholder="imię" type="text" class="input-text" required>
-                                </div>
-                                <div class="col-lg-6">
-                                    <p>Email</p>
-                                    <input id="email" name="email" placeholder="Email" type="email" class="input-text" required>
-                                </div>
-                            </div>
-                            <p>wiadomość</p>
-                            <textarea id="messagge" name="messagge" class="input-textarea" placeholder="napisz cokolwiek ..." required></textarea>
-                            <div class="form-checkbox">
-                                <input type="checkbox" id="check" name="check" value="check" required>
-                                <label for="check">Akceptuje polityke prywatności</label>
-                            </div>
-                            <button class="btn btn-sm" type="submit">wyślij wiadomość</button>
-                            <div class="success-box">
-                                <div class="alert alert-success">gratulacje twoja wiadomość została wysłana poprawnie</div>
-                            </div>
-                            <div class="error-box">
-                                <div class="alert alert-warning">Error, proszę ponowić wysyłanie.twoja wiadomość nie została wysłana</div>
-                            </div>
-                        </form>
+                <div class="col-lg-8">
+                    <div class="title">
+                        <h2>napisz do nas</h2>
+                        <p>kontakt do nas</p>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="title">
-                            <h2>kontakty</h2>
-                            <p>informacje</p>
+                    <form action="themekit/scripts/contact-form/contact-form.php" class="form-box form-ajax"
+                        method="post" data-email="example@domain.com">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <p>imię</p>
+                                <input id="imię" name="imię" placeholder="imię" type="text" class="input-text" required>
+                            </div>
+                            <div class="col-lg-6">
+                                <p>Email</p>
+                                <input id="email" name="email" placeholder="Email" type="email" class="input-text"
+                                    required>
+                            </div>
                         </div>
-                        <ul class="text-list text-list-line">
-                            <li><b>Adres</b><hr /><p>Żarnowiec 76, 84-110 Krokowa</p></li>
-                            <li><b>strona</b><hr /><p>kpkspzoo.pl</p></li>
-                            <li><b>Email</b><hr /><p>sekretariat@kpkspzoo.pl</p></li>
-                            <li><b>Numer telefonu</b><hr /><p>+48 602-735-433</p></li>     
-                        </ul> 
-                        <hr class="space-sm" />
-                        <div class="icon-links icon-social icon-links-grid social-colors-hover">
-                            <a class="facebook"><i class="icon-facebook"></i></a>
-                            <a class="twitter"><i class="icon-twitter"></i></a>
-                            <a class="instagram"><i class="icon-instagram"></i></a>
-                            <a class="google"><i class="icon-google"></i></a>
+                        <p>wiadomość</p>
+                        <textarea id="messagge" name="messagge" class="input-textarea"
+                            placeholder="napisz cokolwiek ..." required></textarea>
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="check" name="check" value="check" required>
+                            <label for="check">Akceptuje polityke prywatności</label>
                         </div>
+                        <button class="btn btn-sm" type="submit">wyślij wiadomość</button>
+                        <div class="success-box">
+                            <div class="alert alert-success">gratulacje twoja wiadomość została wysłana poprawnie</div>
+                        </div>
+                        <div class="error-box">
+                            <div class="alert alert-warning">Error, proszę ponowić wysyłanie.twoja wiadomość nie została
+                                wysłana</div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-4">
+                    <div class="title">
+                        <h2>kontakty</h2>
+                        <p>informacje</p>
+                    </div>
+                    <ul class="text-list text-list-line">
+                        <li><b>Adres</b>
+                            <hr />
+                            <p>Żarnowiec 76, 84-110 Krokowa</p>
+                        </li>
+                        <li><b>strona</b>
+                            <hr />
+                            <p>kpkspzoo.pl</p>
+                        </li>
+                        <li><b>Email</b>
+                            <hr />
+                            <p>sekretariat@kpkspzoo.pl</p>
+                        </li>
+                        <li><b>Numer telefonu</b>
+                            <hr />
+                            <p>+48 602-735-433</p>
+                        </li>
+                    </ul>
+                    <hr class="space-sm" />
+                    <div class="icon-links icon-social icon-links-grid social-colors-hover">
+                        <a class="facebook"><i class="icon-facebook"></i></a>
+                        <a class="twitter"><i class="icon-twitter"></i></a>
+                        <a class="instagram"><i class="icon-instagram"></i></a>
+                        <a class="google"><i class="icon-google"></i></a>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
     </main>
@@ -190,7 +206,8 @@
         </div>
         <div class="footer-bar">
             <div class="container">
-                <span>© 2019 Alpins - szablon wykonany ręcznie przez <a href="https://schiocco.com" target="_blank">schiocco.com</a>.</span>
+                <span>© 2019 Alpins - szablon wykonany ręcznie przez <a href="https://schiocco.com"
+                        target="_blank">schiocco.com</a>.</span>
                 <span><a href="contacts.html">Contact us</a> | <a href="#">Privacy policy</a></span>
             </div>
         </div>
@@ -202,6 +219,18 @@
         <script src="themekit/scripts/contact-form/contact-form.js"></script>
         <script src='themekit/scripts/maps.min.js'></script>
         <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDl7p8SWg-5kLe7i-usdYCu5m3eVllMDTs'></script>
+        <script>
+            var map = L.map('map').setView([51.505, -0.09], 13);
+
+            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            L.marker([51.5, -0.09]).addTo(map)
+                .bindPopup('A pretty CSS popup.<br> Easily customizable.')
+                .openPopup();
+        </script>           
     </footer>
 </body>
+
 </html>
