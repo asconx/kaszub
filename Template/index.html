@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -33,29 +33,43 @@
             <i class="menu-btn"></i>
             <div class="menu-cnt">
                 <ul id="main-menu">
-                    <li>
+                    <li class="dropdown">
                         <a href="#">Główna</a>
+                        <ul>
+                            <li><a href="index.html">Main</a></li>
+                            <li><a href="index-2.html">Home two</a></li>
+                            <li><a href="index-3.html">Home three</a></li>
+                        </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#">Oferta</a>
                         <ul>
-                            <li>
-                                <a href="o-firmie.html">O firmie</a>
+                            <li class="dropdown-submenu">
+                                <a>O nas</a>
+                                <ul>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="team.html">Team</a></li>
+                                    <li><a href="team-2.html">Team two</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a>Regulamin</a>
+                                <ul>
+                                    <li><a href="food.html">Food</a></li>
+                                    <li><a href="shelters.html">Shelters</a></li>
+                                    <li><a href="events.html">Events</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a>FAQ</a>
+                                <ul>
+                                    <li><a href="prices.html">Prices</a></li>
+                                    <li><a href="history.html">History</a></li>
+                                    <li><a href="gallery.html">Gallery</a></li>
+                                </ul>
                             </li>
                             <li>
-                                <a href="pola-namiotowe.html">Pola namiotowe</a>
-                            </li>
-                            <li>
-                                <a href="gallery.html">Galeria</a>
-                            </li>
-                            <li>
-                                <a href="regulamin.html">Regulamin</a>
-                            </li>
-                            <li>
-                                <a href="faq.html">FAQ</a>
-                            </li>
-                            <li>
-                                <a href="blog.html">BLOG</a>
+                                <a href="elements/components/buttons.html">Elements</a>
                             </li>
                         </ul>
                     </li>
@@ -280,88 +294,102 @@
         <section class="section-slider alpins-slider light section-full-width-left" data-slider-parallax="true" data-interval="0">
             <div class="background-slider">
                 <div class="active" style="background-image:url(media/lodz-deb-7.jpg)"></div>
-                <div style="background-image:url(http://via.placeholder.com/1920x1080)"></div>
-                <div style="background-image:url(http://via.placeholder.com/1920x1080)"></div>
-                <div style="background-image:url(http://via.placeholder.com/1920x1080)"></div>
-                <div style="background-image:url(http://via.placeholder.com/1920x1080)"></div>
+                <div class="active" style="background-image:url(media/lodzie-deb-7.jpg)"></div>
+                <div class="active" style="background-image:url(media/lodzie-deb.jpg)"></div>
+                <div class="active" style="background-image:url(media/morze-debki.jpg)"></div>
+                <div class="active" style="background-image:url(media/lodz-3.jpg)"></div>
+                <div class="active" style="background-image:url(media/plaza-widok.jpg)"></div>
             </div>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
                         <ul class="slider" data-options="type:slider,nav:true,arrows:true,perView:3,perViewLg:2,perViewSm:1,gap:30,controls:out">
                             <li>
-                                <a href="treks-single.html" class="media-box media-box-reveal" data-anima="scale" data-trigger="hover">
-                                    <img class="anima" src="http://via.placeholder.com/800x1300" alt="">
+                                <a href="https://www.debki.pl/lepimy-z-gliny-ceramika-debki-a86bf74f" class="media-box media-box-reveal" data-anima="scale" data-trigger="hover">
+                                    <img class="anima" src="media/glina2.jpg" alt="">
                                     <div class="caption">
-                                        <h2>Bianco</h2>
-                                        <div class="extra-field">From $95</div>
-                                        <h3>Alpes, Italy</h3>
+                                        <h2>Lepimy z gliny</h2>
+                                        <div class="extra-field">Od 75zł</div>
+                                        <h3>Dębki, Polska</h3>
                                         <p>
-                                            Lorem ipsum dolore consectetur adipisicing e ididunto pertinole.
+                                            ,,Lepimy z gliny" zaprasza dzieci i dorosłych na spotkanie z gliną z której można wyczarować naprawdę wszystko a przy okazji kreatywnie spędzić czas.
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.debki.pl/skutery-debki-605b2cb7" class="media-box media-box-reveal" data-anima="scale" data-trigger="hover">
+                                    <img class="anima" src="media/skutery2.jpg" alt="">
+                                    <div class="caption">
+                                        <h2>Skutery wodne</h2>
+                                        <div class="extra-field">Od 150zł</div>
+                                        <h3>Dębki, Polska</h3>
+                                        <p>
+                                            Dla miłośników adrenaliny i wodnych atrakcji..
                                         </p>
                                     </div>
                                 </a>
                             </li>
                             <li>
                                 <a href="treks-single.html" class="media-box media-box-reveal" data-anima="scale" data-trigger="hover">
-                                    <img class="anima" src="http://via.placeholder.com/800x1300" alt="">
+                                    <img class="anima" src="media/quady2.jpg" alt="">
                                     <div class="caption">
-                                        <h2>Civetta</h2>
-                                        <div class="extra-field">From $95</div>
-                                        <h3>Dolomiti, Italy</h3>
+                                        <h2>Quady</h2>
+                                        <div class="extra-field">Od 200zł</div>
+                                        <h3>Dębki, Polska</h3>
                                         <p>
-                                            Lorem ipsum dolore consectetur adipisicing e ididunto pertinole.
+                                            Relaks, zabawa i adrenalina gwarantowane!
                                         </p>
                                     </div>
                                 </a>
                             </li>
                             <li>
-                                <a href="treks-single.html" class="media-box media-box-reveal" data-anima="scale" data-trigger="hover">
-                                    <img class="anima" src="http://via.placeholder.com/800x1300" alt="">
+                                <a href="https://www.debki.pl/splywy-kajakowe-rzeka-piasnica-ef7f0edd" class="media-box media-box-reveal" data-anima="scale" data-trigger="hover">
+                                    <img class="anima" src="media/kajaki2.jpg" alt="">
                                     <div class="caption">
-                                        <h2>Teton</h2>
-                                        <div class="extra-field">From $150</div>
-                                        <h3>Wyoming, USA</h3>
+                                        <h2>Spływy kajakowe Piaśnicą do morza.</h2>
+                                        <div class="extra-field">Od 50zł</div>
+                                        <h3>Dębki, Polska</h3>
                                         <p>
-                                            Lorem ipsum dolore consectetur adipisicing e ididunto pertinole.
+                                            Dla wszystkich ceniących cudowną przyrodę, piękne widoki i aktywny wypoczynek.
                                         </p>
                                     </div>
                                 </a>
                             </li>
                             <li>
-                                <a href="treks-single.html" class="media-box media-box-reveal" data-anima="scale" data-trigger="hover">
-                                    <img class="anima" src="http://via.placeholder.com/800x1300" alt="">
+                                <a href="https://www.debki.pl/wieza-widokowa-rybaczowka-c81c0c54" class="media-box media-box-reveal" data-anima="scale" data-trigger="hover">
+                                    <img class="anima" src="media/monte rosa.jpg" alt="">
                                     <div class="caption">
-                                        <h2>Corsica</h2>
-                                        <div class="extra-field">From $50</div>
-                                        <h3>Corsica, France</h3>
+                                        <h2>Wieża widokowa Rybaczówka</h2>
+                                        <div class="extra-field">Od 5zł</div>
+                                        <h3>Dębki, Polska</h3>
                                         <p>
-                                            Lorem ipsum dolore consectetur adipisicing a didunto pertinole.
+                                            Wieża widokowa, z której można podziwiać morze, las, plażę i całą panoramę Dębek.
                                         </p>
                                     </div>
                                 </a>
                             </li>
                             <li>
-                                <a href="treks-single.html" class="media-box media-box-reveal" data-anima="scale" data-trigger="hover">
-                                    <img class="anima" src="http://via.placeholder.com/800x1300" alt="">
+                                <a href="https://linowo-debki.pl" class="media-box media-box-reveal" data-anima="scale" data-trigger="hover">
+                                    <img class="anima" src="media/lina2.jpg" alt="">
                                     <div class="caption">
-                                        <h2>Norda</h2>
-                                        <div class="extra-field">From $95</div>
-                                        <h3>Monte Rosa, Italy</h3>
+                                        <h2>Park linowy "Linowo"</h2>
+                                        <div class="extra-field">Od 30zł</div>
+                                        <h3>Dębki, Polska</h3>
                                         <p>
-                                            Lorem ipsum dolore consectetur adipisicing a didunto pertinole.
+                                            Atrakcja głównie dla dzieci, składa się z trzech torów o różnej trudności.
                                         </p>
                                     </div>
                                 </a>
-                            </li>
+                            </li>    
                         </ul>
                     </div>
                     <div class="col-lg-6" data-anima="fade-left" data-time="2000">
-                        <h1 class="text-lg text-uppercase text-black">The treks of our team</h1>
+                        <h1 class="text-lg text-uppercase text-black">Atrakcje</h1>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiure consectetur adipisicing a didunto persmo. 
+                            Najlepsze atrakcje na Dębkach w jednym miejscu. Wybierz sam spośród wielu!
                         </p>
-                        <a href="treks.html" class="btn btn-sm btn-circle">All treks</a> <a href="team.html" class="btn btn-sm btn-circle btn-border">The team</a>
+                        <a href="treks.html" class="btn btn-sm btn-circle">Wszystkie atrakcje</a>
                         <hr class="space hidden-md" />
                     </div>
                 </div>
@@ -493,32 +521,33 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
-                    <h3>Pole namiotowe "Kaszub"</h3>
-                    <p>Usytułowane w zachodniej części Dębek około 50 m do wejścia na plażę nr 21 licząc do granicy lasu i około 250 m do Bałtyku.</p>
+                    <h3>Alpins</h3>
+                    <p>Somewhere between the bottom of the climb and the summit is the answer to the mystery why we climb.</p>
                 </div>
                 <div class="col-lg-4">
-                    <h3>Kontakty</h3>
+                    <h3>Contacts</h3>
                     <ul class="icon-list icon-line">
-                        <li>Dębki, ul. Łąkowa 5, 84-110 Krokowa</li>
-                        <li>kaszub@kpkspzoo.pl</li>
-                        <li>+48 668-283-043</li>
+                        <li>San Pellegrino, BG, Italy</li>
+                        <li>hello@example.com</li>
+                        <li>02 123 333 444</li>
                     </ul>
                 </div>
                 <div class="col-lg-4">
                     <div class="icon-links icon-social icon-links-grid social-colors">
                         <a class="facebook"><i class="icon-facebook"></i></a>
+                        <a class="twitter"><i class="icon-twitter"></i></a>
                         <a class="instagram"><i class="icon-instagram"></i></a>
                         <a class="google"><i class="icon-google"></i></a>
                     </div>
                     <hr class="space-sm" />
-                    <p>Zapisz sie na newsletter lub obserwuj nas w mediach społecznościowych by być na bieżąco.</p>
+                    <p>Subscribe to our newsletter of follow us on the social channels to stay tuned.</p>
                 </div>
             </div>
         </div>
         <div class="footer-bar">
             <div class="container">
-                <span>© 2024 Krokowskie Przedsiębiorstwo Komunalne Sp. z o. o.  Wszystkie prawa zastrzeżone.</span>
-                <span><a href="kontakt.html">Skontaktuj się z nami</a> | <a href="polityka-prywatnosci.html">Polityka prywatności</a></span>
+                <span>© 2019 Alpins - Hiking & Outdoor Template Handmade by <a href="https://schiocco.com" target="_blank">schiocco.com</a>.</span>
+                <span><a href="contacts.html">Contact us</a> | <a href="#">Privacy policy</a></span>
             </div>
         </div>
         <link rel="stylesheet" href="themekit/media/icons/iconsmind/line-icons.min.css">
